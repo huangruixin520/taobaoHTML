@@ -1,0 +1,804 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html body{
+	width: 100%;
+	background-color:#f4f4f4;
+	height: 1000px;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper .top-nav-wrap{
+	width: 100%;
+	height: 35px;
+	background-color: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+
+.wrapper .top-nav-wrap .top-nav{
+	width: 1190px;
+    height: 35px; 
+    margin: 0 auto;
+    /*border: 1px black solid;*/
+}
+
+.wrapper .top-nav-wrap .top-nav .top-nav-l{
+	float: left;
+}
+.wrapper .top-nav-wrap .top-nav .top-nav-r{
+	float: right;
+}
+.wrapper .top-nav-wrap .top-nav li{
+	float: left;
+	margin-right: 7px;
+}
+.wrapper .top-nav-wrap .top-nav a{
+	color:#6C6C6C;
+	font-size: 12px;
+	line-height: 35px;
+	padding: 0 6px;
+}
+.wrapper .top-nav-wrap .top-nav a:hover{
+	color: #ff5000;
+}
+.wrapper .top-nav-wrap .top-nav .login{
+	color: #ff5000;
+}
+.wrapper .top-nav-wrap .top-nav .cutOff span{
+	color: #ddd;
+	line-height: 35px;
+	font-size: 12px;
+}
+.wrapper .top-nav-wrap .top-nav .china{
+	font-size: 12px;
+	line-height: 35px;
+	color: #3C3C3C;
+}
+.wrapper .top-nav-wrap .top-nav .china .china-span{
+	padding: 0 6px;
+}
+/*top导航所有小图标,对 这里非要设置display有疑惑*/
+.wrapper .top-nav-wrap .top-nav .bgPic{
+	/*display: inline-block;
+	width: 6px;
+	height: 3px;
+	border: 1px solid red;
+	background-size: 100% 100%;
+	vertical-align: middle;*/
+}
+/*引进下三角图标*/
+.wrapper .top-nav-wrap .top-nav .xjbPic{
+	background-image: url('../img/xsj.png');
+}
+/*引进下购物车图标*/
+.wrapper .top-nav-wrap .top-nav .shopCarPic{
+	width: 12px;
+	height: 12px;
+	background-size: 100% 100%;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url('../img/gwc.png');
+}
+/*引进下收藏夹图标*/
+.wrapper .top-nav-wrap .top-nav .likePic{
+	 width: 12px;
+	 height: 12px;
+	 background-size: 100% 100%;
+	 display: inline-block;
+	 background-image: url('../img/star.png');
+	 vertical-align: middle;
+}
+/*引进下网站导航图标*/
+.wrapper .top-nav-wrap .top-nav .webNavPic{
+	 width: 8px;
+	 height: 7px;
+	 background-size: 100% 100%;
+	 display: inline-block;
+	 background-image: url('../img/dh.png');
+	 vertical-align: middle;
+}
+/*导航条结束*/
+
+/*top下的大型搜索包裹区*/
+.wrapper .search-wrap{
+	width: 100%;
+	height: 97px;
+	background-color: white;
+	padding-bottom: 9px;
+	padding-top: 15px;
+	/*border: 1px red solid;*/
+}
+/*top下的大型搜索盒子+淘宝网图标*/
+.wrapper .search-wrap .search-con{
+	width: 1190px;
+	height: 90px;
+	/*border: 1px black solid;*/
+	margin: 0 auto;
+}
+.wrapper .search-wrap .search-con .logo-box{
+	 width: 190px;
+	 height: 80px;
+	 /*border: 1px solid red;*/
+	 display: inline-block;
+	 vertical-align: middle;
+}
+.wrapper .search-wrap .search-con .logo-box img{
+	width: 100%;
+	height: 100%;
+}
+/*一整套搜索盒子*/
+.wrapper .search-wrap .search-con .search-box{
+	 width: 627px;
+	 height: 80px;
+	 /*border: 1px solid red;*/
+	 display: inline-block;
+	 vertical-align: middle;
+}
+/*宝贝天猫+橘黄色搜索栏的div*/
+.wrapper .search-wrap .search-con .search-box .search-bd{
+	width: 627px;
+	height: 62px;
+	/*border: 1px solid blue;*/
+}
+/*宝贝天猫店铺的li*/
+.wrapper .search-wrap .search-con .search-box .search-bd li{
+	float: left;
+	width: 36px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	color: #F40;
+	margin-right: 4px;
+	font-size: 12px;
+}
+.wrapper .search-wrap .search-con .search-box .search-bd li:hover{
+	background-color: #ffe4dd;
+}
+/*已选择宝贝*/
+.wrapper .search-wrap .search-con .search-box .search-bd .select{
+	color: white;
+	font-weight: 500;
+	background:linear-gradient(to right,#ff9000 0,#ff5000 100%);
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+/*宝贝天猫店铺的div*/
+.wrapper .search-wrap .search-con .search-box .search-bd .search-tab{
+	width: 610px;
+	height: 22px;
+	/*border: 1px solid black;*/
+	margin-left: 17px;
+}
+/*橘色搜索栏的div*/
+.wrapper .search-wrap .search-con .search-box .search-bd .search-panel{
+	width: 627px;
+	height: 40px;
+	position: relative;
+}
+/*搜索按钮的div*/
+.wrapper .search-wrap .search-con .search-box .search-bd .search-panel .btn{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 74px;
+	height: 40px;
+	z-index: 1000;
+	border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;  
+}
+/*搜索按钮*/
+.wrapper .search-wrap .search-con .search-box .search-bd .search-panel .btn button{
+	font-weight: 700;
+	background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+	border: none;
+	width: 100%;
+	height: 100%;
+	border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;  
+    cursor: pointer;
+    color: white; 
+    font-size: 18px;
+    font-weight: 450;
+}
+/*"搜索栏"橘黄色边框*/
+.wrapper .search-wrap .search-con .search-box .search-bd .search-panel .search-inp-box{
+	margin-right: 74px;
+    border: 2px solid #ff5000;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;/*橘黄色的搜索栏的右边框不显示*/
+    height: 36px;
+    overflow: hidden;
+}
+/*搜索input的div*/
+.wrapper .search-wrap .search-con .search-box .search-bd .search-panel .search-inp-box .search-inp{
+	height: 36px;
+    overflow: hidden;
+    width: 472px;
+    /*border: 2px solid #FF0000;*/
+    position: relative;
+}
+/*搜索input*/
+.wrapper .search-wrap .search-con .search-box .search-bd .search-panel .search-inp-box input{
+    padding: 6px 0;
+    text-indent: 10px;
+    height: 24px;
+    line-height: 24px;
+    width: 472px;
+    border: none;
+    outline: 0;
+    background: #FFF;
+}
+/*放大镜小图标*/
+.wrapper .search-wrap .search-con .search-box .search-bd .search-panel .search-inp-box .search-inp .sousuo{
+	background-image: url('../img/fdj.png');
+	background-size: 100% 100%;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	position: absolute;
+    left: 7px;
+    top: 9px;
+}
+/*照相机小图标*/
+.wrapper .search-wrap .search-con .search-box .search-bd .search-panel .camera{
+	background-image: url('../img/camera.png');
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	background-size: 100% 100%;
+	right: 90px;
+	top: 9px;
+}
+/*搜索栏下方的推荐div*/
+.wrapper .search-wrap .search-con .search-box .search-ft{
+	width: 626px;
+	height: 20px;
+	/*border: 1px solid black;*/
+}
+/*推荐li*/
+.wrapper .search-wrap .search-con .search-box .search-ft .tuijian li{
+	float: left;
+}
+/*“更多”超链接*/
+.wrapper .search-wrap .search-con .search-box .search-ft .tuijian .more{
+	margin-left: 32px;
+}
+/*推荐字体*/
+.wrapper .search-wrap .search-con .search-box .search-ft .tuijian li a{
+	margin-right: 8px;
+	line-height: 20px;
+	color: #666;
+	font-size: 12px;
+}
+/*推荐触及事件*/
+.wrapper .search-wrap .search-con .search-box .search-ft .tuijian li a:hover{
+	color: #f40;
+}
+/*二维码大盒子div*/
+.wrapper .search-wrap .search-con .code-box{
+	 width: 190px;
+	 height: 90px;
+	 /*border: 1px solid red;*/
+	 display: inline-block;
+	 vertical-align: middle;
+	 position: relative;
+	 float: right; 
+}
+/*X的div框*/
+.wrapper .search-wrap .search-con .code-box .close-box{
+	display: inline-block;
+	width: 16px;
+    height: 16px;
+    border: 1px solid #eee;
+    position: absolute;	 
+}
+/*X关闭*/
+.wrapper .search-wrap .search-con .code-box .close-box .close{
+	font-size: 14px;
+	position: absolute;
+	color: #DDD;
+	margin-top: -3px;
+	margin-left: 3px;
+}
+/*X旁边的二维码盒子div*/
+.wrapper .search-wrap .search-con .code-box .erweima-box{
+	display: inline-block;
+	border: 1px solid #eee;
+	width: 90px;
+    height: 90px;
+    position: absolute;
+    margin-left: 18px;
+    text-align: center;/*设置div中的“手机淘宝”水平居中*/
+}
+/*字体"手机淘宝"*/
+.wrapper .search-wrap .search-con .code-box .p-taobao{
+	color: #ff5000;
+    font-size: 12px; 
+    display: block;
+}
+/*二维码图片*/
+.wrapper .search-wrap .search-con .code-box .erweima{
+	display: block;
+	background-image: url('../img/ewm.png');
+	background-size: 100% 100%;
+	width: 90px;
+	height: 74px;
+}
+/*导航栏开始*/
+.wrapper .screen-nav-wrap .screen-nav-con{
+	width: 1190px;
+	height: 30px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+	
+}
+/*“主题市场”*/
+.wrapper .screen-nav-wrap .screen-nav-con h3{
+	color: white;
+	height: 30px;
+	width: 190px;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+	/*border: 1px solid black;*/
+	background: #ff5000;
+	float: left;/*这里是重点  h3是块级元素会导致ul不能和它在同一行，如果给h3设置float
+	那么ul就可以和它在同一行了*/
+}
+/*局部ul*/
+.wrapper .screen-nav-wrap .screen-nav-con ul{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 525;
+}
+/*局部li*/
+.wrapper .screen-nav-wrap .screen-nav-con ul li{
+	float: left;
+	margin: 0 3px;
+	padding: 0 4px;
+}
+
+/*第一个ul*/
+.wrapper .screen-nav-wrap .screen-nav-con .first{
+    background-size: 100% 30px;
+    background-image: url('../img/cs.png');
+    width: 218px;
+    height: 30px;
+}
+.wrapper .screen-nav-wrap .screen-nav-con a{
+	color: white;
+	padding: 0 5px;
+}
+/*所有a标签时间*/
+.wrapper .screen-nav-wrap .screen-nav-con a:hover{
+	
+}
+
+
+/*大屏图片区域*/
+.wrapper .screen-box-wrap{
+	width: 1190px;
+	height: 632px;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+}
+/*除了右边的大区域*/
+.wrapper .screen-box-wrap .main{
+	width: 890px;
+	height: 632px;
+	/*border: 1px solid red;*/
+	float: left;
+}
+/*左边+女神+天猫 区域*/
+.wrapper .screen-box-wrap .main .main-inner{
+	width: 720px;
+	height: 522px;
+	/*border: 1px solid black;*/
+	float: left;
+}
+/*导购左left区*/
+.wrapper .screen-box-wrap .main .main-inner .main-left{
+	height: 522px;
+	width: 190px;
+	float: left;
+	background-color: white;
+	border: 1px solid #ff5000;
+}
+.wrapper .screen-box-wrap .main .main-inner .main-left ul{
+	border-top: none;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+.wrapper .screen-box-wrap .main .main-inner .main-left li{
+	overflow: hidden;
+    line-height: 32px;
+    height: 32px;
+    padding-left: 25px;
+    padding-right: 19px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 145px;
+    color: #666;
+}
+.wrapper .screen-box-wrap .main .main-inner .main-left a{
+	color: #666;
+	font-size: 14px;
+    font-weight: 400;
+}
+.wrapper .screen-box-wrap .main .main-inner .main-left li:hover{
+	background-color: #ffe4dd;
+	color: #ff5000;
+}
+.wrapper .screen-box-wrap .main .main-inner .main-left a:hover{
+	color: #ff5000;
+}
+/*left左区域结束*/
+
+
+/*轮播图区域(不包含今日这一竖牌)*/
+/*"女神节买什么+化妆品图片这一竖排"*/
+.wrapper .screen-box-wrap .main .main-inner .main-con{
+	width: 514px;
+	height: 510px;
+	/*background: red;*/
+	/*border: 2px solid orange;*/
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.wrapper .screen-box-wrap .main .main-inner .main-con .pic-box{
+	background-image: url('../img/pic2.png');
+	background-size: 100% 100%;
+	width: 514px;
+	height: 280px;
+}
+/*天猫文字图标*/
+.wrapper .screen-box-wrap .main .main-inner .main-con .tianmao{
+	background-image: url('../img/tm.png');
+	background-size: 100% 100%;
+	width: 136px;
+	height: 24px;
+	margin-bottom: -20px;
+}
+.wrapper .screen-box-wrap .main .main-inner .main-con .inner-mall{
+	background-image: url('../img/pic3.png');
+	background-size: 100% 100%;
+	width: 514px;
+	height: 200px;
+	margin-top: 20px;
+}
+/*今日这一竖牌*/
+.wrapper .screen-box-wrap .col-middle{
+	width: 160px;
+	height: 522px;
+	/*border: 2px solid darkblue;*/
+	vertical-align: top;
+	float: left;
+}
+.wrapper .screen-box-wrap .col-middle .middle-pic1{
+	background-image: url('../img/pic1.png');
+	background-size: 100% 100%;
+	width: 160px;
+	height: 280px;
+	margin-top: 10px;
+}
+.wrapper .screen-box-wrap .col-middle .middle-bgPic{
+	background-image: url('../img/pic4.png');
+	background-size: 100% 100%;
+	width: 160px;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.wrapper .screen-box-wrap .main .main-bottom{
+	width: 890px;
+	height: 105px;
+/*	border: 2px solid black;*/
+	bottom: -80px;
+	position: absolute;
+}
+
+.wrapper .screen-box-wrap .main-bottom .toutiao{
+	background-image: url('../img/tbtt.png');
+	background-size: 100% 100%;
+	width: 180px;
+	height: 73px;
+	margin-top: 10px;
+	float: left;
+}
+.wrapper .screen-box-wrap .main-bottom .gg{
+	background-image: url('../img/pic5.png');
+	background-size: 100% 100%;
+	width: 130px;
+	height: 80px;
+	margin-top: 15px;
+	float: left;
+	margin-left: 15px;
+}
+.wrapper .screen-box-wrap .main-bottom .con{
+	margin-left: 144px;
+    color: #999;
+    height: 36px;
+    line-height: 18px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+/*右边开始*/
+.wrapper .screen-box-wrap .col-right{
+	width: 295px;
+	height: 632px;
+	/*border: 1px solid blue;*/
+	float: left;
+	background: white;
+}
+.wrapper .screen-box-wrap .col-right .menber{
+	width: 290px;
+	height: 145px;
+	/*border: 1px solid black;*/
+	background-image: url('../img/bg.png');
+	background-size: 100% 100%;
+}
+.wrapper .screen-box-wrap .col-right .menber .menber-bd{
+	width: 290px;
+	height: 91px;
+	/*border-bottom: 1px solid lawngreen;*/
+}
+
+.wrapper .screen-box-wrap .col-right .menber .menber-bd .tx{
+	text-align: center;
+}
+.wrapper .screen-box-wrap .col-right .menber-bd .tx img{
+	border-radius: 50%;
+}
+.wrapper .screen-box-wrap .col-right .menber-bd .hello{
+	display: block;
+	line-height: 17px;
+    height: 17px;
+    color: #3C3C3C;
+    text-align: center;
+    font-size: 12px;
+}
+.wrapper .screen-box-wrap .col-right .menber-bd p{
+	height: 17px;
+    line-height: 17px;
+    display: block;
+    text-align: center;
+    width: 290px;
+}
+.wrapper .screen-box-wrap .col-right .menber-bd .icon,
+.wrapper .screen-box-wrap .col-right .menber-bd .club{
+	height: 17px;
+	line-height: 17px;
+	position: relative;
+	color: #ff5000;
+	display: inline-block;
+	font-size: 14px;
+	background: #ffe4db;
+	border-radius: 9px;
+	margin-left: 35px;
+}
+.wrapper .screen-box-wrap .col-right .menber-bd .icon .pic{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: url('../img/pics.png') no-repeat;
+	top: 0px;
+	left: -16px;
+	background-position: 0 -572.5px;
+}
+.wrapper .screen-box-wrap .col-right .menber-bd .club .pic{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: url('../img/pics.png') no-repeat;
+	top: 0px;
+	left: -15px;
+	background-position: 0 -528px;
+}
+
+
+.wrapper .screen-box-wrap .col-right .menber .menber-ft{
+	width: 290px;
+	height: 40px;
+	/*border: 1px solid red;*/
+}
+.wrapper .screen-box-wrap .col-right .menber .menber-ft .menber-logout{
+	height: 25px;
+	width: 275px;
+    margin: 8px auto;
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+.wrapper .screen-box-wrap .col-right .menber .menber-ft .menber-logout a{
+	line-height: 25px;
+    width: 100px;
+    margin-right: 7px;
+    text-align: center;
+    color: #FFF;
+    background-image: linear-gradient(to right,#ff5000 0,#ff6f06 100%);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 3px 25px;
+    border-radius: 8px;
+}
+/*网上有害信息举报专区*/
+.wrapper .screen-box-wrap .col-right .message{
+	width: 290px;
+	height: 26px;
+	/*border: 1px solid salmon;*/
+	background: #ffe4dd;
+}
+/*网上有害信息举报专区*/
+.wrapper .screen-box-wrap .col-right .message a{
+	padding-left: 82px;
+	color: #f40;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+}
+/*模型盒子*/
+.wrapper .screen-box-wrap .col-right .notice{
+	width: 291px;
+	height: 100px;
+	/*border: 2px solid black;*/
+}
+.wrapper .screen-box-wrap .col-right .notice .title li{
+	float: left;
+	line-height: 20px;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    margin: 0 13px;
+}
+.wrapper .screen-box-wrap .col-right .notice .title .safe{
+	color: #FF5000;
+}
+
+.wrapper .screen-box-wrap .col-right .notice .title li a{
+	color: #3C3C3C;
+	cursor: pointer;
+	font-size: 12px;
+}
+.wrapper .screen-box-wrap .col-right .notice .title li a:hover{
+	color: #FF5000;
+}
+
+
+.wrapper .screen-box-wrap .col-right .notice .con{
+	width: 300px;
+	height: 50px;
+	/*border: 1px solid blue;*/
+}
+
+
+.wrapper .screen-box-wrap .col-right .notice .con li{
+	float: left;
+	line-height: 25px;
+	height: 25px;
+	width: 130px;
+	margin: 0 8px;
+	padding-top: 5px;
+}
+.wrapper .screen-box-wrap .col-right .notice .con .maijia{
+	color: #FF5000;
+}
+.wrapper .screen-box-wrap .col-right .notice .con li a{
+	font-size: 12px;
+	color: #3C3C3C;
+	cursor: pointer;
+}
+.wrapper .screen-box-wrap .col-right .notice .con li a:hover{
+	color: #FF5000;
+}
+
+/*充话费9宫格模型盒子*/
+.wrapper .screen-box-wrap .col-right .moudle{
+	width: 292px;
+	height: 216px;
+	margin-left: 2px;
+	margin-top: 5px;
+	border-top:1px orange solid;
+	border-left:1px orange solid;
+}
+.wrapper .screen-box-wrap .col-right .moudle li{
+	float: left;
+	width: 71px;
+	height: 71px;
+	border-bottom: 1px solid orange;
+	border-right: 1px solid orange;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a{
+	display: block;
+	text-align: center;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a:hover{
+	color: #FF5000;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url('../img/pics.png') no-repeat 100% 100%;
+	margin-top: 12px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic1{
+	background-position: 0px 0px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic2{
+	background-position: 0px -85px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic3{
+	background-position: 0px -44px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic4{
+	background-position: 0px -132px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic5{
+	background-position: 0px -176px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic6{
+	background-position: 0px -220px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic7{
+	background-position: 0px -264px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic8{
+	background-position: 0px -308px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic9{
+	background-position: 0px -352px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic10{
+	background-position: 0px -396px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic11{
+	background-position: 0px -440px;
+}
+.wrapper .screen-box-wrap .col-right .moudle li a .pic12{
+	background-position: 0px -484px;
+}
+/*app图标开始*/
+.wrapper .screen-box-wrap .col-right .app h3{
+	font-size: 14px;
+    padding-left: 14px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    z-index: 2;
+}
+.wrapper .screen-box-wrap .col-right .app h3 a{
+	position: absolute;
+    right: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.wrapper .screen-box-wrap .col-right .app ul{
+	padding-left: 23px;
+    position: relative;
+    height: 84px;
+    width: 290px;
+}
+.wrapper .screen-box-wrap .col-right .app ul li{
+    position: relative;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-right: 21px;
+    margin-bottom: 8px;
+}
+.wrapper .screen-box-wrap .col-right .app ul li img{
+	width: 32px;
+    height: 32px;
+}
